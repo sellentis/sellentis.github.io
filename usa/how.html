@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Как покупать в США</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/remodal-default-theme.css">
+	<link rel="stylesheet" href="css/remodal.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+</head>
+<body>
+	<div class="remodal-bg">
+	
+	</div>
+	<div class="remodal" id="register" data-remodal-id="register">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Регистрация аккаунта</h2>
+		<p class="headbox__p">Укажите ваш e-mail и пароль</p>
+		<form action="#">
+		  	<input class="form_input" type="email" placeholder="Введите вашу почту">
+		  	<input class="form_input" type="password"placeholder="Придумайте пароль">
+		  	<p class="inp_help">Не менее 6 символов</p>
+		  	<input class="form_input" type="password"placeholder="Введите повторно пароль">
+		  	<input class="form_btn" type="submit" value="Регистрация">
+		  	<p class="remodal__checkbox">
+			    <input type="checkbox" id="test1" checked/>
+			    <label for="test1">Согласен(сна) получать email-уведомления</label>
+			</p>
+  		</form>
+  		<p class="remodal__conditions">При создании аккаунта вы принимаете наши</p>
+		<a class="remodal__conditions__href" href="agree.doc">Условия использования</a>
+		<p class="remodal__enter">Вы можете <a href="#auth">войти</a> в существующий аккаунт </p>
+	</div>
+	<div class="remodal" id="auth" data-remodal-id="auth">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Вход</h2>
+		<p class="headbox__p">Введите ваш e-mail и пароль</p>
+		<form action="#">
+		  	<input class="form_input" type="email" placeholder="Введите вашу почту">
+		  	<input class="form_input" type="password"placeholder="Введите ваш пароль">
+		  	<input class="form_btn" type="submit" value="Вход">
+  		</form>
+		<p class="remodal__enter">У вас нет аккаунта? <a href="#register">создайте новый аккаунт</a></p>
+	</div>
+	<div class="remodal" id="delivery" data-remodal-id="delivery">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Рассчитать доставку</h2>
+		<p class="headbox__p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает </p>
+		<form action="#">
+			<p class="inp_help2">Стоимость доставки:</p>
+		  	<input class="form_input" type="text" placeholder="30 000 руб.">
+		  	<input class="form_btn" type="submit" value="Оставить заявку">
+  		</form>
+	</div>
+	<div class="remodal" id="rquestion" data-remodal-id="rquestion">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Задайте вопрос</h2>
+		<p class="headbox__p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает </p>
+		<form action="#topic">
+			<select name="select1" id="select1" required>
+				<option value="">Выберите рубрику</option>
+			    <option value="1">1</option>
+			    <option value="2">2</option>
+			</select>
+		  	<input class="form_btn" type="submit" value="Далее">
+  		</form>
+	</div>
+	<div class="remodal" id="topic" data-remodal-id="topic">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Ваш вопрос</h2>
+		<p class="headbox__p">Напишите интересующий Вас вопрос и наши менеджеры свяжутся с Вами в ближайшее время.</p>
+		<form action="#done">
+			<input class="form_input" type="text" placeholder="Как к вам обращаться?" required>
+			<input class="form_input" type="text" placeholder="Введите вашу почту" required>
+			<div class="textarea__cont">
+				<textarea name="textarea" class="maxlength" placeholder="Напишите, чем мы можем вам помочь?" maxlength="270"  required></textarea>
+				<span id="remainingC">qwe</span>
+			</div>
+		  	<input class="form_btn" type="submit" value="Задать вопрос">
+
+  		</form>
+	</div>
+	<div class="remodal" id="done" data-remodal-id="done">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		<h2 class="headbox__h">Тут будет рубрика</h2>
+		<p class="headbox__p">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает </p>
+		<div class="checkbg"></div>
+		<a href="index.html" class="main-btn">На главную</a>
+	</div>
+	<div class="mob__menu">
+		<div class="close-cont">
+			<span class="m-b m-b-first m-b-first--active"></span>
+			<span class="m-b m-b-second m-b-second--active"></span>
+			<span class="m-b m-b-third m-b-third--active"></span>
+		</div>
+		<ul class="mob__menu__list">
+			<h2>Меню</h2>
+			<li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+			<li class="menu__item"><a href="gid.html" class="menu__link">Гид по покупкам</a></li>
+			<li class="menu__item"><a href="prices.html" class="menu__link">Цены и условия</a></li>
+			<li class="menu__item"><a href="custom.html" class="menu__link">Таможенное оформление</a></li>
+			<li class="menu__item"><a href="last.html" class="menu__link">Последняя миля</a></li>
+			<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+		</ul>
+	</div>
+	<header class="header">
+		<div class="container">
+			<nav class="menu">
+				<div class="menu__button">
+					<div class="open-cont">
+						<span class="m-b m-b-first"></span>
+						<span class="m-b m-b-second"></span>
+						<span class="m-b m-b-third"></span>
+					</div>
+					<div class="menu__word">
+						<span>Меню</span>
+					</div>
+				</div>
+				<div class="menu__logo">
+					<a href="index.html" class="logo__item">
+						<span class="logo__item__first">Made in Russia</span><br>
+						<span class="logo__item__second">Mir.express</span>
+					</a>
+				</div>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="gid.html" class="menu__link">Гид по покупкам</a></li>
+					<li class="menu__item"><a href="prices.html" class="menu__link">Цены и условия</a></li>
+					<li class="menu__item"><a href="custom.html" class="menu__link">Таможенное оформление</a></li>
+					<li class="menu__item"><a href="last.html" class="menu__link">Последняя миля</a></li>
+					<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+				<div class="menu__cabinet">
+					<a href="#auth" class="menu__cabinet__enter">Вход</a>
+					<a href="#register" class="menu__cabinet__reg">Регистрация<i></i></a>
+					<!-- <div href="#" class="menu__cabinet__lang">
+						<span>RU</span>
+						<ul class="lang__switch">
+							<li><a href="#" class="lang__switch__href">RU</a></li>
+							<li><a href="#" class="lang__switch__href">ENG</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</nav>
+		</div>
+	</header>
+	<section class="page__header">
+		<div class="container">
+			<!-- <p class="crumbs"><a href="index.html">Главная</a> > <a href="#">Как покупать в США</a></p> -->
+			<h1>Как покупать в США</h1>
+		</div>
+	</section>
+	<section class="how">
+		<img src="img/how.png" alt="">
+		<div class="container">
+			<h2>Итак, шаг первый.</h2>
+			<p>Вам интересны покупки в США, но вы не знаете с чего начать. Мы поможем вам с этим! Для начала нужно пройти регистрацию на нашем сайте и получить свой персональный адрес. Инструкцию по регистрации и наполнению личного кабинета вы можете увидеть здесь(ссылка на инструкцию по использованию личного кабинета). <br>Ну вот и все! Самое сложное уже позади, осталось лишь выбрать магазин, в котором вы будете делать покупки. Ознакомьтесь со списком магазинов.</p>
+			<h2>Шаг второй.</h2>
+			<p>Ваша покупка успешно прибыла на наш склад. По прибытию вашего заказа на склад вы получаете E-mail уведомление. После этого вы либо продолжаете консолидацию ваших покупок, либо даете команду на отправку.</p>
+			<h2>Шаг третий.</h2>
+			<p>Оплата. В своем личном кабинете вы видите общий вес посылки и сумму за его перевозку. Обратите внимание, что вес всегда округляется до 500гр. На этапе оплаты вам необходимо заполнить таможенную декларацию и указать ФИО и адрес получателя. После заполнения необходимых документов вы оплачиваете посылку.</p>
+			<h2>Шаг четвертый.</h2>
+			<p>Доставка до дома. Ну вот и все, осталось совсем чуть-чуть, после того как посылка была сформирована ей присваивается трек номер, по которому вы отслеживаете ее местоположение в своем личном кабинете. Как только посылка пройдет все таможенные процедуры вы получите SMS уведомление и с вами свяжется наш оператор, который подскажет вам с вариантами (пункт выдачи или курьером до дома).</p>
+			<h2>Как получить адрес склада в США для оформления заказа?</h2>
+			<p>После регистрации на сайте мы предоставим Вам информацию с адресом нашего склада в США. Вы сможете использовать его при оформлении заказов в интернет-магазинах США как адрес доставки для последующей консолидации и отправки к Вам, в Россию.</p>
+			<h2>Понадобится ли дополнительная оплата кроме стоимости самой доставки посылки (например, за объединение покупок)?</h2>
+			<p>"Мир-Экспресс" предоставляет Вам абсолютно прозрачную информацию по стоимости доставки и не взимает никаких дополнительных платежей после того, как Вами был произведен платеж за выбранный способ доставки. Никакая дополнительная комиссия за консолидацию не взимается.</p>
+			<h2>Сколько дней потребуется для доставки посылки из США?</h2>
+			<p>Самая быстрая доставка со склада в США происходит за 4 дня, с учетом авиаперелета, выпуска таможней и доставки курьерской службой по Москве. Среднее время доставки со склада занимает 5-10 дней. <br>*В случае праздничных дней , выходных ,а так же удаленности города доставки , время на доставку Вашей посылки может быть увеличена.</p>
+			<h2>Сколько будет стоить доставка посылки из США?</h2>
+			<p>Стоимость доставки зависит от веса посылки.<br>
+			Чем больше вес посылки, тем дешевле получается ее доставка. Соответственно, консолидировать все Ваши покупки в ОДНУ более выгодно.<br>
+			Стоимость доставки одной посылки, начиная с 0,5 кг, составляет $12.<br>
+			Более точную стоимость можно рассчитать, используя предложенный нами калькулятор стоимости доставки.</p>
+			<h2>В каких магазинах я могу найти интересующий меня товар?</h2>
+			<p>В любых интернет-магазинах в США, которые осуществляют доставку.<br>
+			Так же можем предложить Вам возможные варианты Интернет магазинов по <a href="shops.html">категориям</a>.</p>
+			<h2>Сможете ли вы проверить соответствие товара ( цвет, размер, количество) ?</h2>
+			<p>Мир-Экспресс не несет ответственность за соответствие товаров с инвойсом либо декларацией.<br>
+			Вся ответственность лежит на выбранном Вами Интернет-магазине.</p>
+			<h2>Вес посылки не тот, что был указан на сайте. Почему?</h2>
+			<p>Магазины не гарантируют вам вес товара, описывается предположительный. Так же стоит учитывать вес самой коробки. <br>*Также магазин часто указывает чистый вес товара, а на складе взвешивается товар вместе с упаковкой.<br>
+			Точный вес определяется только после взвешивания на складе.</p>
+			<h2>Что делать, если мой браузер не открывает сайт интернет-магазина из предложенного вами списка?</h2>
+			<p>Если сайт из нашего списка предложенных Интернет-магазинов не открывается, то это означает, что ваш браузер не поддерживает возможность смены IP адреса. Тогда Вам стоит воспользоваться другим VPN. Это программа, с помощью которой вы будете заходить на сайт Интернет магазина словно ваш IP адрес находится на территории США.<br>
+			Скачать программу можно по ссылке. *</p>
+			<h2>Должен ли я платить таможенные пошлины при получении своей посылки?</h2>
+			<p>На сегодняшний день, таможенные лимиты (то есть сумма, которая не облагается таможенной пошлиной) составляют 500 евро и 31килограмм в месяц на человека. Если содержимое вашей посылки этих лимитов не превышает, то ничего платить при получении посылки не требуется.</p>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__box footer__box__1">
+				<p class="foot__desc"></p>
+				<p class="foot__desc"></p>
+				<p class="foot__desc foot__desc__last"></p>
+				
+			</div>
+			<div class="footer__box footer__box__2">
+				<h2 class="addr__header">Городской офис</h2>
+				<p class="addr__first">125212, Москва, ул.Адмирала Макарова д.8</p>
+				<p class="addr__second">+7(495) 232-39-23</p>
+
+				<h2 class="addr__header">Офис</h2>
+				<p class="addr__first">141400, Московская область, а.п Шереметьево-2, <br>Грузовой Терминал “Шереметьево-Карго”</p>
+				<p class="addr__second">+7 (495) 961-38-34</p>
+
+				<h2 class="addr__header">График работы</h2>
+				<p class="addr__first">Пн-пт с 10:00 до 18:00</p>
+				<p class="addr__second">Сб-вс выходной</p>
+			</div>
+			<div class="footer__box footer__box__3">
+				<a class="foot__tel" href="tel:+74952323923">+7(495) 232-39-23</a>
+				<a class="foot__mail" href="mailto:info@mir-express.net">info@mir-express.net</a>
+				<!-- <a href="#rquestion" class="main-btn">Задать свой вопрос</a> -->
+				<!-- <p class="foot__psoc">Поделиться в соц сетях:</p> -->
+				<a href="agree.doc" class="foot__href">Пользовательское соглашение</a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/remodal.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

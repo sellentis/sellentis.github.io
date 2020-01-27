@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<title>Liquien</title>
+	<style>
+		#grow, #developers, #user-stories {
+			height: 0px;
+			width: 0;
+			overflow: hidden;
+		}
+		[data-animation-in] {
+            opacity: 0;
+        }
+        .slick-dots {
+        	bottom: 50px;
+        	padding-left: 30px;
+        	text-align: left;
+        	/*background: #000;*/
+        }
+        .slick-slide img {
+        	display: inline-block;
+        }
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav class="d-f main-menu">
+				<div class="logo">
+					<a href="index.html" class="logo__item">Liquien</a>
+				</div>
+				<ul class="menu d-f">
+					<li class="menu__item" style="list-style-type: none;"><a href="start.html" class="menu__link">Get Started</a></li>
+					<li class="menu__item" style="list-style-type: none;"><a href="about.html" class="menu__link">About Us</a></li>
+					<li class="menu__item" style="list-style-type: none;"><a href="#" class="menu__link">Blog</a></li>
+				</ul>
+				<div class="contact d-f ai-c">
+					<a href="contact.html" class="btn">Contact us</a>
+				</div>
+			</nav>
+			
+		</div>
+		<nav class="d-f mob-menu">
+				<div class="mob-menu__header">
+					<div class="logo">
+						<a href="index.html" class="logo__item">Liquien</a>
+					</div>
+					<div class="hamb-container">
+						<div class="hamb">
+							<span class="hamb-top"></span>
+							<span class="hamb-bot"></span>
+						</div>
+						<div class="hamb-text">menu</div>
+					</div>
+
+				</div>
+				<div class="mob-menu__footer">
+					<ul class="menu d-f">
+						<li class="menu__item" style="list-style-type: none;"><a href="start.html" class="menu__link">Get Started</a></li>
+						<li class="menu__item" style="list-style-type: none;"><a href="about.html" class="menu__link">About Us</a></li>
+						<li class="menu__item" style="list-style-type: none;"><a href="#" class="menu__link last">Blog</a></li>
+					</ul>
+					<div class="contact d-f ai-c">
+						<a href="contact.html" class="btn">Contact us</a>
+					</div>
+				</div>
+			</nav>
+	</header>
+	<main style="overflow-x: hidden">
+		<section id="main" class="main">
+			<div class="background-gradient">
+				
+			</div>
+			<div class="container d-f">
+				<div class="main-left animated fadeInLeft delay-1s">
+
+					<h1 class="page__header">Business spending can be beautifully easy</h1>
+					<p class="page__header-title">Spendesk is the smart way to manage your business spending. Flexible payments, approvals, expenses, invoices and accounting — all together for the first time.</p>
+					<a href="start.html" class="btn">Get Started</a>
+				</div>
+				<div class="main-right main-left animated fadeInRight delay-1s" > 
+					<img src="img/main.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="work" class="work">
+			<div class="container d-f">
+				<div class="work-left d-f" data-aos="fade-right">
+					<div class="work-left__left d-f">
+						<div class="work-left__left__item work__item">
+							<div class="work__item__logo d-f jc-c">
+								<img src="img/expenses.svg" alt="">
+							</div>
+							<h3>Web development</h3>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+						</div>
+						<div class="work-left__left__item work__item">
+							<div class="work__item__logo d-f jc-c">
+								<img src="img/purchases.svg" alt="">
+							</div>
+							<h3>Branding</h3>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+						</div>
+					</div>
+					<div class="work-left__right work__item">
+						<div class="work-left__right__item">
+							<div class="work__item__logo d-f jc-c">
+								<img src="img/accounts.svg" alt="">
+							</div>
+							<h3>UI/UX Design</h3>
+							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="work-right d-f">
+					<div class="work-right__item" data-aos="fade-left">
+						<h2>What we do</h2>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy. Quis rem voluptas in excepturi molestiae, sed fuga magni voluptate!</p>
+						<a href="about.html" class="btn">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="benefits" class="benefits">
+			
+			<div class="container d-f">
+				<div class="benefits-left" data-aos="fade-right"> <!-- data-aos="fade-right" -->
+					<h3>Benefits</h3>
+					<h2>Contemporary Design</h2>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et </p>
+					<a href="#" class="contact-btn">Contact us
+					<svg id="ic-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						  <path id="Path_133" data-name="Path 133" d="M0,0H24V24H0Z" fill="none"/>
+						  <path id="Path_134" data-name="Path 134" d="M12,4,10.59,5.41,16.17,11H4v2H16.17l-5.58,5.59L12,20l8-8Z"/>
+						</svg>
+					</a>
+				</div>
+				<div class="benefits-right">
+					<div class="benefits-right__img" data-aos="fade-left">  <!-- data-aos="fade-left" -->
+						<img src="img/benefits.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="background-gradient-reverse">
+				<div class="background-gradient-reverse-line">
+					
+				</div>
+			</div>
+		</section>
+		<section class="collect-email">
+		    <div class="container">
+			    <div class="collect-email-partial">
+			      <div class="intro-copy">
+			        <div class="collect-header">
+			          <p class="common-UppercaseText">
+			            Interested in starting a business?
+			          </p>
+			          <p class="common-BodyText">
+			            Get a free one-month course on starting your business written by the experts at Stripe Atlas.
+			          </p>
+			        </div>
+			        <form class="collect-form">
+			          <div class="collect-input">
+			            <input class="email-field" required="required" type="email" name="cm-cktjyd-cktjyd" placeholder="Email" value="">
+			            <button class="submit-button submit-email" type="submit">Get the course</button>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="collect-success">
+			        <img class="icon" src="img/ok.png" alt="Green checkmark">
+			        <h3 class="common-BodyTitle">Thank you!</h3>
+			          <p class="common-BodyText">
+			              We sent an email to&nbsp;<span class="collected-email"></span>
+			          </p>
+			        <p class="common-BodyText">
+			            Check your inbox to confirm your email address and you will immediately receive the first lesson.&nbsp;        </p>
+			      </div>
+			    </div>
+		    </div>
+		</section>
+		<section id="features" class="features">
+			<div class="container d-f">
+				<div class="features-left">
+					<div class="features-slider">
+						<div class='benefit' id='futureproof'>
+						  <div class='container-lg'>
+						    <figure>
+						      <div class='changelog' data-aos="fade-up">
+						        <ul class='entries'>
+						        	<!-- 1 slide -->
+						            <li>
+						              <p class='meta'>
+						              	<img src="img/accounts.svg" alt="">
+						                <strong>Sigma</strong>
+						              </p>
+						              <p>We've upgraded the Stripe Billing tables with new schemas. We now also support querying the <code>products</code> table.</p>
+						            </li>
+									<!-- 2 slide -->
+						            <li>
+						              <p class='meta'>
+						              	<img src="img/accounts.svg" alt="">
+						                <strong>Dashboard</strong>
+						              </p>
+						              <p>You can now use the Stripe Dashboard in Italian.</p>
+						            </li>
+									<!-- 3 slide -->
+						            <li>
+						              <p class='meta'>
+						              	<img src="img/accounts.svg" alt="">
+						                <strong>Billing</strong>
+						              </p>
+						              <p>You can now display custom fields and add a footer to your invoices.</p>
+						            </li>
+						            <li>
+						              <p class='meta'>
+						              	<img src="img/accounts.svg" alt="">
+						                <strong>Billing</strong>
+						              </p>
+						              <p>You can now display custom fields and add a footer to your invoices.</p>
+						            </li>
+						        </ul>
+						      </div>
+						    </figure>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="features-right" data-aos="fade-up">
+					<h2>Optimize the customer lifecycle</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rem voluptas in excepturi molestiae, sed fuga magni voluptate! Cum aspernatur odit nihil mollitia aperiam, repudiandae laudantium aut eligendi. Ullam, possimus!</p>
+				</div>
+			</div>
+		</section>
+		<section id="clients" class="clients">
+			<div class="appear-container">
+				<img src="img/spock.png" class="appear appear1" alt="">
+				<img src="img/spock.png" class="appear appear2" alt="">
+				<img src="img/spock.png" class="appear appear3" alt="">
+				<img src="img/spock.png" class="appear appear4" alt="">
+				<img src="img/spock.png" class="appear appear5" alt="">
+				
+				<img src="img/spock.png" class="appear appear6" alt="">
+				<img src="img/spock.png" class="appear appear7" alt="">
+				<img src="img/spock.png" class="appear appear8" alt="">
+			</div>
+			<div class="background-gradient">
+				<div class="background-gradient-line">
+					
+				</div>
+			</div>
+			<div class="container d-f">
+				<div class="clients-left" data-aos="fade-up">
+					<h2>Trusted by 1,000+<br> fast-growing teams</h2>
+					<div class="rating-container d-f">
+						<div class="rating">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<p class="small"><strong>5/5</strong> on Capterra</p>
+						</div>
+						<div class="rating">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<p class="small"><strong>4.8/5</strong> on Getapp</p>
+						</div>
+						<div class="rating">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<img src="img/star.svg" alt="">
+							<p class="small"><strong>5/5</strong> on Facebook</p>
+						</div>
+					</div>
+				</div>
+				<div class="clients-right">
+					<div class="cl-sl-box">
+						<div class="clients-slider" data-aos="fade-up">
+							<div class="clients-slider__item" data-animation-in="fadeIn"  data-delay-out="2000000">
+								<blockquote>
+									The customer support level is the best I've ever seen, and they're constantly adding new features and improving the existing ones.
+								</blockquote>
+								<div class="clients-slider__item__author">
+									<img src="img/accounts.svg" alt="">
+									<div class="clients-slider__item__author__info">
+										<p class="author__name">Mark Lodge</p>
+										<p class="author__post">Director Business Planning, NextBigThing</p>
+									</div>
+								</div>
+							</div>
+							<div class="clients-slider__item" data-animation-in="fadeIn"  data-delay-out="2000000">
+								<blockquote>
+									The customer support level is the best I've ever seen, and they're constantly adding new features and improving the existing ones.
+								</blockquote>
+								<div class="clients-slider__item__author">
+									<img src="img/accounts.svg" alt="">
+									<div class="clients-slider__item__author__info">
+										<p class="author__name">Mark Lodge</p>
+										<p class="author__post">Director Business Planning, NextBigThing</p>
+									</div>
+								</div>
+							</div>
+							<div class="clients-slider__item" data-animation-in="fadeIn"  data-delay-out="2000000">
+								<blockquote>
+									The customer support level is the best I've ever seen, and they're constantly adding new features and improving the existing ones.
+								</blockquote>
+								<div class="clients-slider__item__author">
+									<img src="img/accounts.svg" alt="">
+									<div class="clients-slider__item__author__info">
+										<p class="author__name">Mark Lodge</p>
+										<p class="author__post">Director Business Planning, NextBigThing</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="smart" class="smart">
+			<!-- <div class="background-gradient-reverse">
+				
+			</div> -->
+			<div class="container d-f">
+				<div class="smart-left">
+					<h2>Switch to smart, trackable spending</h2>
+					<p>It’s easy to get started!</p>
+					<a href="start.html" class="btn">Get started</a>
+				</div>
+				<div class="smart-right">
+					<h2>Let's talk</h2>
+					<p>Connect with a spending expert.</p>
+					<a href="#" class="btn">Book a demo</a>
+				</div>
+			</div>
+		</section>
+		<!-- dont delete --> 
+
+		<div class='benefit' id='grow'>
+		  <div class='container-lg'>
+		    <figure class='floating-cards'>
+		      <div class='card'>
+		        <h3>&nbsp;</h3>
+		        <ul class='tabs'>
+		          <li title='Cards'></li>
+		        </ul>
+		        <div class='forms'>
+		          <ul>
+		            <li>
+		            </li>
+		          </ul>
+		        </div>
+		      </div>
+		    </figure>
+		  </div>
+		</div>
+
+		<div class='benefit' id='developers'>
+		  <div class='container-lg'>
+		    <figure class='floating-cards'>
+		      <div class='card'>
+		        <ul class='tabs'>
+		          <li></li>
+		        </ul>
+		        <div class='code-container'>
+		          <ul class='code'>
+		            <li class='libraries-callout'>
+		            </li>
+		          </ul>
+		        </div>
+		      </div>
+		    </figure>
+		  </div>
+		</div>
+
+		<div class='container-xl' id='user-stories'>
+		  <div class='main'>
+		    <button class='prev'></button>
+		    <button class='next'></button>
+		    <div class='common-Card card'>
+		      <figure>
+		        <ul>
+		            <li></li>
+		        </ul>
+		      </figure>
+		      <div class='stories'>
+		        <ul>
+		            <li>
+		              <p class='common-BodyText'></p>
+		              <p class='common-BodyText'><a></a></p>
+		            </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class='container-lg logo-row story-logos'>
+		    <ul>
+		        <li>
+		          <a><img src="img/arrow.svg" alt=""></a>
+		        </li>
+		    </ul>
+		  </div>
+		</div>
+		<!--  -->
+	</main>
+	<footer>
+		<div class="container">
+			<div class="top d-f jc-sb">
+				<div class="logo">
+					<a class="logo__item" href="index.html">Liquien</a>
+				</div>
+				<div class="top__item">
+					<p>Product</p>
+					<ul>
+						<li style="list-style-type: none;"><a href="about.html">How it works</a></li>
+					</ul>
+				</div>
+				<div class="top__item">
+					<p>Resources</p>
+					<ul>
+						<li style="list-style-type: none;"><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="top__item">
+					<p>Company</p>
+					<ul>
+						<li style="list-style-type: none;"><a href="contact.html">Contact us</a></li>
+						<li style="list-style-type: none;"><a href="mailto:hello@liquien.com">hello@liquien.com</a></li>
+					</ul>
+					<div class="social">
+						<a href="#" class="social__link fb"><img src="img/fb.svg" alt=""></a>
+						<a href="#" class="social__link tw"><img src="img/tw.svg" alt=""></a>
+						<a href="#" class="social__link in"><img src="img/ic_linkedin.svg" alt=""></a>
+						<a href="#" class="social__link inst"><img src="img/instagram.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<ul class="d-f">
+					<li style="list-style-type: none;"><a href="index.html">&copy; Liquien</a></li>
+					<li style="list-style-type: none;"><a href="#">Terms of Service</a></li>
+					<li style="list-style-type: none;"><a href="#">Privacy Policy</a></li>
+					<li style="list-style-type: none;"><a href="#">Legal notice</a></li>
+					<li style="list-style-type: none;"><a href="#">Sitemap</a></li>
+				</ul>
+				<p class="extrasmall">This prepaid Mastercard card is issued by Transact Payments Limited pursuant to license by Mastercard International Incorporated. Transact Payments Limited is licensed by the Gibraltar Financial Services Commission. Registered Office: 6.20 World Trade Center, 6 Bayside Road, Gibraltar, GX11 1AA. Registered No. 108217. Mastercard and the circles design are registered trademarks of Mastercard International Incorporated.</p>
+			</div>
+		</div>
+	</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/slick-anim.js"></script>
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script> //clients-slider
+	var sliderInit = $('.clients-slider');
+    $(document).ready(function () {
+        sliderInit.slick({
+            autoplay: 1,
+            autoplaySpeed: 5000,
+            dots: true,
+            arrows: false,
+            draggable: false
+        });
+        sliderInit.slickAnimation();
+		});
+
+		AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+</body>
+</html>

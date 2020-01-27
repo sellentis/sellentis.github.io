@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<title>Mate</title>
+</head>
+<body>
+	<div id="Go_Top">
+		<img src="img/icons/arrow-top.svg" alt="Вверх" height="20px" width="20px">
+	</div>
+
+	<div class="auth-box" id="register1">
+		<img src="img/fancy-logo.svg" class="auth-logo">
+		<h2>Введите ваш e-mail:</h2>
+		<p>Пожалуйста укажите действующий e-mail адрес к которому у вас есть доступ</p>
+		<div class="input-row input-row-email">
+			<input type="email" placeholder="Ваш email">
+		</div>
+		<a class="continue-reg" data-fancybox data-src="#register2" href="javascript:;">продолжить регистрацию<img src="img/icons/arrow.svg" alt=""></a>
+		<a href="#" class="close-reg">закрыть</a>
+	</div>
+
+
+	<div class="auth-box" id="register2">
+		<img src="img/fancy-logo.svg" class="auth-logo">
+		<h2>Ваш уникальный пароль:</h2>
+		<p>Сохраните ваш пароль в надежном месте</p>
+		<div class="input-row input-row-pass">
+			<input type="text" class="pass" placeholder="Ваш пароль">
+			<a href="#" class="copy-btn"></a>
+			<div class="copy-text">скопировано</div>
+		</div>
+		<a class="continue-reg" data-fancybox data-src="#register3" href="javascript:;">продолжить регистрацию<img src="img/icons/arrow.svg" alt=""></a>
+		<a href="#" class="close-reg">закрыть</a>
+	</div>
+
+
+	<div class="auth-box auth-box-keys" id="register3">
+		<img src="img/fancy-logo.svg" class="auth-logo">
+		<h2>Уникальные ключевые фразы:</h2>
+		<textarea readonly class="unique reg-info" placeholder="Запишите свою ключевую фразу на листе бумаги и храните ее в надежном месте. Вам понадобится ключевая фраза, чтобы восстановить ваш аккаунт."></textarea>
+		<div class="keywords">
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+			<div class="keyword">some</div>
+		</div>
+		
+		<div class="copy-row">
+			<a href="#" class="copy-words"><img src="img/icons/copy.png" alt="">скопировать фразу</a>
+			<div class="copy-text2">скопировано</div>
+		</div>
+
+		<a class="continue-reg" href="#">подтвердить регистрацию</a>
+		
+		<a href="#" class="close-reg">закрыть</a>
+	</div>
+
+	<div class="auth-box" id="register4">
+		<img src="img/fancy-logo.svg" class="auth-logo">
+		<h2>Персональный вход</h2>
+		<p>Пожалуйста корректно заполните все свои данные</p>
+		<div class="input-row input-row-auth ">
+			<input type="text" class="inp-error" placeholder="Ваш password">
+		</div>
+		<a href="#" class="auth-btn"><img src="img/icons/auth-wallet.png" alt="">перейти в кошелек</a>
+		<a data-fancybox data-src="#register5" href="javascript:;" class="return-btn"><img src="img/icons/return.png" alt="">восстановить доступ</a>
+		<a href="#" class="close-reg">закрыть</a>
+	</div>
+	
+	<div class="auth-box auth-box-keys" id="register5">
+		<img src="img/fancy-logo.svg" class="auth-logo">
+		<h2>Восстановление доступа:</h2>
+		<textarea readonly class="unique reg-info" placeholder="Пожалуйста, введите ваши уникальные ключевые фразы ниже, и мы попытаемся восстановить ваш кошелек."></textarea>
+		<textarea class="return-text" placeholder="Ваш текст"></textarea>
+		<a href="#" class="auth-btn">восстановить доступ</a>
+
+		<a href="#" class="close-reg">закрыть</a>
+	</div>
+
+	<div class="overlay">
+	    <nav class="overlayMenu">  
+	        <ul role="menu">
+	            <li><a href data-href="#wallet" role="menuitem">Кошелек</a></li>
+	            <li><a href data-href="#arbitrage" role="menuitem">Арбитраж</a></li>
+	            <li><a href data-href="#mining" role="menuitem">Майнинг</a></li>
+	            <li><a href data-href="#token" role="menuitem">Токен</a></li>
+	            <li><a href data-href="#exchange" role="menuitem">Биржа</a></li>
+	            <li><a href="faq.html" role="menuitem">FAQ</a></li>
+	            <li><a href="news.html" role="menuitem">Новости</a></li>
+	            <li><a href="contacts.html" role="menuitem">Контакты</a></li>
+	        </ul>
+	        <div class="mob__buttons">
+		       	<div class="rate">
+					<p class="rate__first"><span>1X MATE</span> = 123 USD</p>
+					<p class="rate__bottom">эмиссия mate = 1 000 000</p>
+				</div>
+				<a data-fancybox data-src="#register4" href="javascript:;" class="btn-purse"><img src="img/icons/purse.svg" alt=""><span>Кошелек</span></a>
+				<a data-fancybox data-src="#register1" href="javascript:;" class="btn-reg"><img src="img/icons/register.svg" alt=""><span>Регистрация</span></a>
+	        </div>
+	    </nav>
+	</div>
+
+	<div class="navBurger" role="navigation" id="navToggle"></div>
+
+	<main>
+		<header class="header">
+			<div class="container header-container">
+				<nav class="menu">
+					<div class="header__logo">
+						<div class="logo__container">
+							<a href="index.html" class="logo-mob"><img src="img/logo-dark.svg" alt=""></a>
+						</div>
+						<div class="lang__container">
+							<div class="lang__container__current">
+								<img src="img/icons/eng.png" alt="">
+								<span>ENG</span>
+							</div>
+							<ul class="lang__container__list">
+								<li>
+									<img src="img/icons/eng.png" alt="">
+									<span>RU</span>
+								</li>
+								<li>
+									<img src="img/icons/eng.png" alt="">
+									<span>UA</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__menu">
+						<ul>
+							<li><a href data-href="#wallet">Кошелек</a></li>
+							<li class="dot">•</li>
+							<li><a href data-href="#arbitrage">Арбитраж</a></li>
+							<li class="dot">•</li>
+							<li><a href data-href="#mining">Майнинг</a></li>
+							<li class="dot">•</li>
+							<li><a href data-href="#token">Токен</a></li>
+							<li class="dot">•</li>
+							<li><a href data-href="#exchange">Биржа</a></li>
+							<li class="dot">•</li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li class="dot">•</li>
+							<li><a href="news.html">Новости</a></li>
+							<li class="dot">•</li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="header__buttons index-page-bg">
+						<a href="#messenger" class="header-messenger">Mate | Мессенджер</a>
+						<div class="rate">
+							<p class="rate__first"><span>1X MATE</span> = 123 USD</p>
+							<p class="rate__bottom">эмиссия mate = 1 000 000</p>
+						</div>
+						<a data-fancybox data-src="#register4" href="javascript:;" class="btn-purse"><img src="img/icons/purse.svg" alt=""><span>Кошелек</span></a>
+						<a data-fancybox data-src="#register1" href="javascript:;" class="btn-reg"><img src="img/icons/register.svg" alt=""><span>Регистрация</span></a>
+					</div>
+				</nav>
+				<div class="first">
+					<div class="first__text">
+						<div class="main__social">
+							<div class="rotated">мы в социальных сетях</div>
+							<div class="main__social__links">
+								<a class="ico_tg" href="#"></a>
+								<a class="ico_vk" href="#"></a>
+								<a class="ico_fb" href="#"></a>
+								<a class="ico_yt" href="#"></a>
+							</div>
+						</div>
+						<div class="main">
+							<div class="main__virtues">
+								<img src="img/icons/arrow-down.svg" alt=""><span>○</span>  надежный  <span>○</span>  умный  <span>○</span>  инновационный 
+							</div>
+							<h1>Мультифункциональный</h1>
+							<h2>криптовалютный <span>кошелек!</span></h2>
+							<p>Mate это лучший выбор для хранения вашей цифровой валюты! <br>С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень конфиденциальности и надежности при отправке и получении!</p>
+							<div class="main__buttons">
+								<a href="#" class="start-btn"><img src="img/icons/add.png" alt=""><span>создать кошелек</span></a>
+								<a href="#" class="investor-btn">инвесторам</a>
+							</div>
+						</div>
+					</div>
+					<div class="first__live">
+						<a href="#" class="live-btn">Смотреть транзакции</a>
+						<div class="live-toggle">
+							<h2><span>live</span> транзакции:</h2>
+							<div class="live__box">
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/btc2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--closing">Закрытие сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--done">Успешно &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/eth2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--reg">Оформление сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--wait">Ожидание &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/btc2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--closing">Закрытие сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--done">Успешно &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/eth2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--reg">Оформление сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--wait">Ожидание &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/btc2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--closing">Закрытие сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--done">Успешно &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/eth2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--reg">Оформление сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--wait">Ожидание &bull;</div>
+									</div>
+								</div>
+								<div class="live__row">
+									<div class="live__row__coin">
+										<img src="img/icons/btc2x.png" alt="">
+									</div>
+									<div class="live__row__sum">
+										<h3>ID: #12345</h3>
+										<p>+0.123456789 BTC</p>
+									</div>
+									<div class="live__row__date">
+										<h3 class="row__header">8 ноя.2019 15:22:02</h3>
+										<span class="deal__status deal__status--closing">Закрытие сделки</span>
+									</div>
+									<div class="live__row__hash">
+										<h3 class="row__header">hash:</h3>
+										<p class="hash__code">3NqWq9594rKKh1DacwE...yayzos</p>
+									</div>
+									<div class="live__row__status">
+										<h3 class="row__header">статус:</h3>
+										<div class="status__box status__box--done">Успешно &bull;</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="deals-btn">Все сделки<img src="img/icons/arrow.svg" height="6px" width="22px"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="support">
+			<div class="support__box">
+				<div class="container header-container">
+					<h2><span>mate</span> поддерживает:</h2>
+				</div>
+				<div class="support__slider">
+					<div class="support__item sup-btc">
+						<div class="support__valute">
+							<img src="img/icons/btc2x.png" alt="">
+							<span>Bitcoin</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 BTC = 9 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-eth">
+						<div class="support__valute">
+							<img src="img/icons/eth2x.png" alt="">
+							<span>Ethereum</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-ltc">
+						<div class="support__valute">
+							<img src="img/icons/ltc2x.png" alt="">
+							<span>ltc</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-dash">
+						<div class="support__valute">
+							<img src="img/icons/dash2x.png" alt="">
+							<span>dash</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-ripple">
+						<div class="support__valute">
+							<img src="img/icons/ripple2x.png" alt="">
+							<span>ripple</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-btcash">
+						<div class="support__valute">
+							<img src="img/icons/btc cash2x.png" alt="">
+							<span>btcash</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-dogy">
+						<div class="support__valute">
+							<img src="img/icons/dogy2x.png" alt="">
+							<span>dogy</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-stellar">
+						<div class="support__valute">
+							<img src="img/icons/stellar2x.png" alt="">
+							<span>stellar</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-zcash">
+						<div class="support__valute">
+							<img src="img/icons/z cash2x.png" alt="">
+							<span>zcash</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-monero">
+						<div class="support__valute">
+							<img src="img/icons/monero2x.png" alt="">
+							<span>monero</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-tron">
+						<div class="support__valute">
+							<img src="img/icons/tron2x.png" alt="">
+							<span>tron</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-pm">
+						<div class="support__valute">
+							<img src="img/icons/pm2x.png" alt="">
+							<span>pm</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-payyer">
+						<div class="support__valute">
+							<img src="img/icons/payyer2x.png" alt="">
+							<span>payyer</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+					<div class="support__item sup-adv">
+						<div class="support__valute">
+							<img src="img/icons/adv2x.png" alt="">
+							<span>adv</span>
+						</div>
+						<div class="support__rate">
+							<p><span>&bull;</span>1 ETH = 256 USD</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ecosystem">
+			<div class="container">
+				<div class="ecosystem__img">
+					<img src="img/eco-logo.png" alt="">
+				</div>
+				<div class="ecosystem__text">
+					<p class="eco__text1">Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы </p>
+					<p class="eco__text2">Mate это единственный в мире криптовалютный кошелек в котором за хранение вашей валюты вы получаете пассивный доход! В зависимости от Вашего вклада Вы сможете получать начисления от 1% до 1.5% в день! </p>
+				</div>
+				<div class="ecosystem__links">
+					<h2><span>mate</span> это:</h2>
+					<div class="ecosystem__links__box">
+						<a href="#"><img src="img/buttons/eco1.svg" alt=""></a>
+						<img class="eco-plus" src="img/icons/plus.svg" alt="">
+						<a href="#"><img src="img/buttons/eco2.svg" alt=""></a>
+						<img class="eco-plus" src="img/icons/plus.svg" alt="">
+						<a href="#"><img src="img/buttons/eco3.svg" alt=""></a>
+						<img class="eco-plus" src="img/icons/plus.svg" alt="">
+						<a href="#"><img src="img/buttons/eco4.svg" alt=""></a>
+						<img class="eco-plus" src="img/icons/plus.svg" alt="">
+						<a href="#"><img src="img/buttons/eco5.svg" alt=""></a>
+						<img class="eco-plus" src="img/icons/plus.svg" alt="">
+						<a href="#"><img src="img/buttons/eco6.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info info1" id="messenger">
+			<div class="container">
+				<div class="info__img">
+					<img src="img/matew-messenger.png" alt="">
+				</div>
+				<div class="info__text">
+					<div class="section__header">
+						<h2>Анонимный мессенджер</h2>
+						<h3>общайтесь и <span>зарабатывайте</span></h3>
+					</div>
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!</p>
+					<ul>
+						<li>Полностью анонимный мессенджер Matew.</li>
+						<li>Вам не нужен номер телефона для мессенджера</li>
+						<li>Первый мессенджер в котором можно зарабатывать</li>
+						<li>Донат система для групп и частных лиц</li>
+						<li>Просто общайся и получай наши токены Matew.</li>
+						<li>Простое создание инвестиционных проектов с нашим ботом.</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="devices">
+			<div class="container">
+				<h2>MATEW messenger скоро на всех устройствах</h2>
+				<div class="devices__img">
+					<div class="dev-mob">
+						<img src="img/android.png" alt="" class="dev-mob">
+						<a href="#" class="device-btn device-android"><span></span>matew messenger for android</a>
+					</div>
+					<div class="dev-mac">
+						<img src="img/mac.png" alt="" class="dev-mac">
+						<a href="#" class="device-btn device-mac"><span></span>matew messenger for android</a>
+					</div>
+					<div class="dev-mob">
+						<img src="img/iPhone.png" alt="" class="dev-mob">
+						<a href="#" class="device-btn device-iphone"><span></span>matew messenger for android</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info info5 info-reversed" id="wallet">
+			<div class="container">
+				<div class="info__text">
+					<div class="section__header">
+						<h2>Мультифункциональный</h2>
+						<h3>криптовалютный <span>кошелек</span></h3>
+					</div>
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности</p>
+					<ul>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором за хранение </li>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором </li>
+						<li>Mate это единственный в мире криптовалютный кошелек</li>
+					</ul>
+					<div class="start__mining">
+						<img src="img/icons/start-ico.svg" alt="">
+						<div>Для успешного начала майнинга первым шагом необходимо создать кошелек mate</div>
+						<a href="#" class="start-btn"><img src="img/icons/add.png" alt=""><span>создать кошелек</span></a>
+					</div>
+				</div>
+				<div class="info__img">
+					<img src="img/wallet.png" alt="">
+				</div>
+				<div class="info__plus">
+					<div class="info__plus__item">
+						<img src="img/icons/wallet1-2x.png" alt="">
+						<h2>Надежно</h2>
+					</div>
+					<div class="info__plus__item">
+						<img src="img/icons/wallet2-2x.png" alt="">
+						<h2>Анонимно</h2>
+					</div>
+					<div class="info__plus__item">
+						<img src="img/icons/wallet3-2x.png" alt="">
+						<h2>Быстро</h2>
+					</div>
+					<div class="info__plus__item">
+						<img src="img/icons/wallet4-2x.png" alt="">
+						<h2>Прибыльно</h2>
+					</div>
+					<div class="info__plus__item">
+						<img src="img/icons/wallet5-2x.png" alt="">
+						<h2>Доступно</h2>
+					</div>
+					<div class="info__plus__item">
+						<img src="img/icons/wallet6-2x.png" alt="">
+						<h2>Выгодно</h2>
+					</div>
+				</div>
+				<div class="section__header calc-header">
+					<h2>Тарифные планы</h2>
+					<h3>кошелька <span>mate</span></h3>
+				</div>
+				<div class="info__calc">
+					<div class="info__calc__tariffs">
+						<div class="calc__row">
+							<div class="calc__row__img">
+								<img src="img/calc-circle.png" alt="" class="calc__row__img__bg">
+								<div class="calc__row__img__text">
+									<h2>0.6%</h2>
+									<p>за 24 часа</p>
+								</div>
+							</div>
+							<div class="calc__row__item">
+								<h3>начисления прибыли:</h3>
+								<span>ежесекундные</span>
+							</div>
+							<div class="calc__row__item">
+								<h3>минимальный депозит:</h3>
+								<p>= 5$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>максимальный депозит:</h3>
+								<p>= 999$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>возврат депозита:</h3>
+								<p class="deposit-time">через 24 часа</p>
+							</div>
+						</div>
+						<div class="calc__row calc__row--even">
+							<div class="calc__row__img">
+								<img src="img/calc-circle.png" alt="" class="calc__row__img__bg">
+								<div class="calc__row__img__text">
+									<h2>0.7%</h2>
+									<p>за 24 часа</p>
+								</div>
+							</div>
+							<div class="calc__row__item">
+								<h3>начисления прибыли:</h3>
+								<span>ежесекундные</span>
+							</div>
+							<div class="calc__row__item">
+								<h3>минимальный депозит:</h3>
+								<p>= 1000$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>максимальный депозит:</h3>
+								<p>= 2499$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>возврат депозита:</h3>
+								<p class="deposit-time">через 24 часа</p>
+							</div>
+						</div>
+						<div class="calc__row">
+							<div class="calc__row__img">
+								<img src="img/calc-circle.png" alt="" class="calc__row__img__bg">
+								<div class="calc__row__img__text">
+									<h2>0.8%</h2>
+									<p>за 24 часа</p>
+								</div>
+							</div>
+							<div class="calc__row__item">
+								<h3>начисления прибыли:</h3>
+								<span>ежесекундные</span>
+							</div>
+							<div class="calc__row__item">
+								<h3>минимальный депозит:</h3>
+								<p>= 2500$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>максимальный депозит:</h3>
+								<p>= 4999$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>возврат депозита:</h3>
+								<p class="deposit-time">через 24 часа</p>
+							</div>
+						</div>
+						<div class="calc__row calc__row--even">
+							<div class="calc__row__img">
+								<img src="img/calc-circle.png" alt="" class="calc__row__img__bg">
+								<div class="calc__row__img__text">
+									<h2>0.9%</h2>
+									<p>за 24 часа</p>
+								</div>
+							</div>
+							<div class="calc__row__item">
+								<h3>начисления прибыли:</h3>
+								<span>ежесекундные</span>
+							</div>
+							<div class="calc__row__item">
+								<h3>минимальный депозит:</h3>
+								<p>= 5000$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>максимальный депозит:</h3>
+								<p>= 9999$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>возврат депозита:</h3>
+								<p class="deposit-time">через 24 часа</p>
+							</div>
+						</div>
+						<div class="calc__row">
+							<div class="calc__row__img">
+								<img src="img/calc-circle.png" alt="" class="calc__row__img__bg">
+								<div class="calc__row__img__text">
+									<h2>1%</h2>
+									<p>за 24 часа</p>
+								</div>
+							</div>
+							<div class="calc__row__item">
+								<h3>начисления прибыли:</h3>
+								<span>ежесекундные</span>
+							</div>
+							<div class="calc__row__item">
+								<h3>минимальный депозит:</h3>
+								<p>= 10000$</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>максимальный депозит:</h3>
+								<p>= unlimited</p>
+							</div>
+							<div class="calc__row__item">
+								<h3>возврат депозита:</h3>
+								<p class="deposit-time">через 24 часа</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offers__partners">
+					<div class="offers__partners__top">
+						<div class="offers__steps">
+							<img src="img/icons/growth.svg" class="offer-ico" alt="">
+							<div class="offer__step">
+								<span>20</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>10</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>5</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>3</span>
+							</div>
+						</div>
+						<div class="offers__logo">
+							<img src="img/icons/offers-logo.svg" alt="">
+						</div>
+					</div>
+					<div class="offers__partners__bottom">
+						<a href="#" class="offer-btn">партнерские материалы</a>
+						<div class="offers__text">
+							Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info info2" id="arbitrage">
+			<div class="container">
+				<div class="info__img">
+					<img src="img/arbitration.png" alt="">
+				</div>
+				<div class="info__text">
+					<div class="section__header">
+						<h2>Арбитражная система</h2>
+						<h3>постоянный <span>доход</span></h3>
+					</div>
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!</p>
+					<div class="info__advantages">
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="arbitration">
+			<div class="container">
+				<div class="arbitration__header">
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности</p>
+					<ul>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором за хранение </li>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором </li>
+						<li>Mate это единственный в мире криптовалютный кошелек</li>
+					</ul>
+				</div>
+				<div class="arbitration__steps">
+					<div class="arb-step-first arb-step">
+						<img src="img/step1.svg" alt="" class="arb-text">
+						<img src="img/arb-step1.png" alt="" class="arb-bg">
+						<img src="img/icons/step1ico.svg" alt="" class="arb-ico">
+						<p>Пополняете свой <br>кошелек mate</p>
+					</div>
+					<div class="arb-step-middle arb-step">
+						<img src="img/step2.svg" alt="" class="arb-text">
+						<img src="img/arb-step2.png" alt="" class="arb-bg">
+						<img src="img/icons/step2ico.svg" alt="" class="arb-ico">
+						<p>Переходите в раздел Арбитраж</p>
+					</div>
+					<div class="arb-step-middle arb-step">
+						<img src="img/step3.svg" alt="" class="arb-text">
+						<img src="img/arb-step2.png" alt="" class="arb-bg">
+						<img src="img/icons/step3ico.png" alt="" class="arb-ico">
+						<p>Вносите депозит для работы нашего бота</p>
+					</div>
+					<div class="arb-step-last arb-step">
+						<img src="img/step4.svg" alt="" class="arb-text">
+						<img src="img/arb-step3.png" alt="" class="arb-bg">
+						<img src="img/icons/step4ico.svg" alt="" class="arb-ico">
+						<p>Получайте прибыль от 0.2% до 0.3% за 4 часа</p>
+					</div>
+				</div>
+				<div class="arbitration__table">
+					<table class="responsive">
+					  <thead>
+					    <tr>
+					      <th></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					      <th><img src="img/icons/pm.png" alt=""></th>
+					    </tr>
+					  </thead>
+					  <tbody>
+					    <tr class="td-bg-white">
+						    <td>Время обмена</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+						    <td>4 часа</td>
+					    </tr>
+					    <tr class="td-bg-white">
+					    	<td>Суммы обмена</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    	<td>от 0.001 до 1 btc</td>
+					    </tr>
+					    <tr class="td-bg-blue">
+					    	<td>Прибыль арбитража</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    	<td>от 0.21% до 0.25%</td>
+					    </tr>
+					    <tr class="td-bg-yellow">
+					    	<td>Партнерская прибыль</td>
+					    	<td  colspan="10">
+					    		Партнерская программа на все валюты в системе mate arbitration -20%
+								<a href="#" class="partners-materials">Партнерские материалы<img src="img/icons/arrow.svg" alt=""></a>
+					    	</td>
+					    </tr>
+					  </tbody>
+					</table>
+				</div>
+				<a href="#" class="arb-btn">начать арбитраж</a>
+			</div>
+		</div>
+		<section class="token" id="token">
+			<div class="container">
+				<div class="token__text">
+					<div class="section__header">
+						<h2>Новационный токен mate</h2>
+						<h3>разработан на <span>blockchain 3.0</span></h3>
+					</div>
+					<p>Нами создана собственная монета MATE coin, в основе которой стоит разработка универсальной программы заработка с использованием арбитража не только на финансовых рынках, но и применение ее в других отраслях торговли.</p>
+					<div class="token__buttons">
+						<div class="token-btn">1х mate <b>&nbsp;= 123</b></div>
+						<div class="token-btn">Эмиссия <b>&nbsp;= 1000000 </b></div>
+						<div class="token-btn">1х mate <b>&nbsp;= 123</b></div>
+						<div class="token-btn">Добыто <b>&nbsp;- 12345 </b></div>
+						<div class="token-btn-gold">При добыче 1000000 mate <b>&nbsp;-  будет открыта биржа!</b></div>
+					</div>
+				</div>
+				<div class="token__img">
+					<div class="token__img__box">
+						<img class="main-token" src="img/token.png" alt="">
+						<div class="token__img__bg"><img src="img/token-circle.png" alt=""></div>
+						<div class="token__img__after"><img src="img/token-img-after.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="conditions conditions__mining">
+			<div class="container">
+				<div class="conditions__img conditions__img__text">
+					<h2><img src="img/icons/3d.png" alt="">Условия майнинга <span>&nbsp;токена mate</span></h2>
+					<ul>
+						<li>○ Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!</li>
+						<li>○ Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют</li>
+						<li>○ Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют</li>
+					</ul>
+					<img class="cond-bg" src="img/condition-bg.png" alt="">
+				</div>
+				<div class="conditions__text">
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности</p>
+					<ul>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором за хранение </li>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором </li>
+						<li>Mate это единственный в мире криптовалютный кошелек</li>
+					</ul>
+					<div class="start__mining">
+						<img src="img/icons/start-ico.svg" alt="">
+						<div>Для успешного начала майнинга первым шагом необходимо создать кошелек mate</div>
+						<a href="#" class="start-btn"><img src="img/icons/add.png" alt=""><span>создать кошелек</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info info3" id="mining">
+			<div class="container">
+				<div class="info__img">
+					<img src="img/mining.png" alt="">
+				</div>
+				<div class="info__text">
+					<div class="section__header">
+						<h2>Облачный майнинг</h2>
+						<h3>добыча токена <span>mate</span></h3>
+					</div>
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!</p>
+					<div class="info__mining">
+						<div class="mining-ico">
+							<img src="img/icons/mining-ico.svg" alt="">
+						</div>
+						<div class="mining__item mining__item--normal">
+							<div class="left-bottom-angle"></div>
+							<div class="right-top-angle"></div>
+							<h2>Добыто монет:</h2>
+							<h3>1 234 56 MATE</h3>
+						</div>
+						<div class="mining__item mining__item--reversed">
+							<div class="left-top-angle"></div>
+							<div class="right-bottom-angle"></div>
+							<h2>Доспутно для майнинга:</h2>
+							<h3>1 000 000 MATE</h3>
+						</div>
+						<div class="mining__item mining__item--normal">
+							<div class="left-top-angle"></div>
+							<div class="right-bottom-angle"></div>
+							<h2>Цена монеты:</h2>
+							<h3>1х MATE = $12.00</h3>
+						</div>
+						<div class="mining__item mining__item--reversed">
+							<div class="left-bottom-angle"></div>
+							<div class="right-top-angle"></div>
+							<h2>Целевая стоимость:</h2>
+							<h3>1х MATE = $350.00</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="offers">
+			<div class="container">
+				<div class="offers__header">
+					<div class="section__header">
+						<h2>Тарифные планы</h2>
+						<h3>майнинга <span>mate</span></h3>
+					</div>
+					<div class="offers__info">
+						Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности
+					</div>
+				</div>
+				<div class="offers__tariffs">
+					<div class="tariffs__item">
+						<div class="tariffs__item__ico">
+							<img src="img/icons/tarrif-start.svg" alt="">
+						</div>	
+						<h2>START</h2>
+						<div class="tariffs__item__info">
+							<div class="tarrif__row">
+								<h3>Плата за MH:</h3>
+								<p>$300 — $1 000</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Добыча монет:</h3>
+								<p>100 — 29900 mate</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Срок аренды:</h3>
+								<p>20 дней</p>
+							</div>
+							<a href="#" class="tariff-btn"><span>выбрать тариф</span></a>
+						</div>
+					</div>
+					<div class="tariffs__item">
+						<div class="tariffs__item__ico">
+							<img src="img/icons/tarrif-basic.svg" alt="">
+						</div>	
+						<h2>basic</h2>
+						<div class="tariffs__item__info">
+							<div class="tarrif__row">
+								<h3>Плата за MH:</h3>
+								<p>$300 — $1 000</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Добыча монет:</h3>
+								<p>100 — 29900 mate</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Срок аренды:</h3>
+								<p>20 дней</p>
+							</div>
+							<a href="#" class="tariff-btn"><span>выбрать тариф</span></a>
+						</div>
+					</div>
+					<div class="tariffs__item">
+						<div class="tariffs__item__ico">
+							<img src="img/icons/tarrif-medium.svg" alt="">
+						</div>	
+						<h2>medium</h2>
+						<div class="tariffs__item__info">
+							<div class="tarrif__row">
+								<h3>Плата за MH:</h3>
+								<p>$300 — $1 000</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Добыча монет:</h3>
+								<p>100 — 29900 mate</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Срок аренды:</h3>
+								<p>20 дней</p>
+							</div>
+							<a href="#" class="tariff-btn"><span>выбрать тариф</span></a>
+						</div>
+					</div>
+					<div class="tariffs__item">
+						<div class="tariffs__item__ico">
+							<img src="img/icons/tarrif-normal.svg" alt="">
+						</div>	
+						<h2>normal</h2>
+						<div class="tariffs__item__info">
+							<div class="tarrif__row">
+								<h3>Плата за MH:</h3>
+								<p>$300 — $1 000</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Добыча монет:</h3>
+								<p>100 — 29900 mate</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Срок аренды:</h3>
+								<p>20 дней</p>
+							</div>
+							<a href="#" class="tariff-btn"><span>выбрать тариф</span></a>
+						</div>
+					</div>
+					<div class="tariffs__item">
+						<div class="tariffs__item__ico">
+							<img src="img/icons/tarrif-heavy.svg" alt="">
+						</div>	
+						<h2>heavy</h2>
+						<div class="tariffs__item__info">
+							<div class="tarrif__row">
+								<h3>Плата за MH:</h3>
+								<p>$300 — $1 000</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Добыча монет:</h3>
+								<p>100 — 29900 mate</p>
+							</div>
+							<div class="tarrif__row">
+								<h3>Срок аренды:</h3>
+								<p>20 дней</p>
+							</div>
+							<a href="#" class="tariff-btn"><span>выбрать тариф</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="offers__partners">
+					<div class="offers__partners__top">
+						<div class="offers__steps">
+							<img src="img/icons/growth.svg" class="offer-ico" alt="">
+							<div class="offer__step">
+								<span>20</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>10</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>5</span>
+								<img src="img/icons/offer-arrow.svg" alt="">
+							</div>
+							<div class="offer__step">
+								<span>3</span>
+							</div>
+						</div>
+						<div class="offers__logo">
+							<img src="img/icons/offers-logo.svg" alt="">
+						</div>
+					</div>
+					<div class="offers__partners__bottom">
+						<a href="#" class="offer-btn">партнерские материалы</a>
+						<div class="offers__text">
+							Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="info info4 info-reversed" id="exchange">
+			<div class="container">
+				<div class="info__text">
+					<div class="section__header">
+						<h2>Децентрализованая биржа</h2>
+						<h3>обменивайте <span>криптоактивы</span></h3>
+					</div>
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении!</p>
+					<div class="info__advantages">
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+						<div class="info__item">Mate это единственный в мире  кошелек в котором за хранение вашей</div>
+					</div>
+				</div>
+				<div class="info__img">
+					<img src="img/exchange.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="conditions">
+			<div class="container">
+				<div class="conditions__img">
+					<img src="img/condition-mac.png" class="cond-mac" alt="">
+					<div class="mine__start">
+						<h2>До открытия осталось добыть:</h2>
+						<h3>1 433 223 mate</h3>
+					</div>
+					<div class="mine__start__bg"></div>
+				</div>
+				<div class="conditions__text">
+					<p>Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности и конфиденциальности при отправке и получении! Mate это лучший выбор для хранения вашей цифровой валюты! С нами вы можете быть уверены, что ваши цифровые активы имеют максимальный уровень надежности</p>
+					<ul>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором за хранение </li>
+						<li>Mate это единственный в мире криптовалютный кошелек в котором </li>
+						<li>Mate это единственный в мире криптовалютный кошелек</li>
+					</ul>
+					<div class="start__mining">
+						<img src="img/icons/start-ico.svg" alt="">
+						<div>Для успешного начала майнинга первым шагом необходимо создать кошелек mate</div>
+						<a href="#" class="start-btn"><img src="img/icons/add.png" alt=""><span>создать кошелек</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="register">
+			<div class="container">
+				<div class="register__text">
+					<p>Пройдите быструю регистрацию и начните зарабатывать крупные деньги уже сейчас!</p>
+				</div>
+				<div class="register__button">
+					<a href="#" class="btn"><span>Пройти регистрацию</span><img src="img/icons/arrow.svg" alt=""></a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__menu">
+				<ul>
+					<li><a href="#">Кошелек</a></li>
+					<li><a href="#">Арбитраж</a></li>
+					<li><a href="#">Майнинг</a></li>
+					<li><a href="#">Токен</a></li>
+					<li><a href="#">Биржа</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__down">
+				<div class="footer__down__logo">
+					<div class="logo__container">
+						<a href="index.html" class="logo-desc"><img src="img/logo-light.svg" alt=""></a>
+						<a href="index.html" class="logo-mob"><img src="img/logo-dark.svg" alt=""></a>
+					</div>
+					<div class="lang__container">
+						<div class="lang__container__current">
+							<img src="img/icons/eng.png" alt="">
+							<span>ENG</span>
+						</div>
+						<ul class="lang__container__list">
+							<li>
+								<img src="img/icons/eng.png" alt="">
+								<span>RU</span>
+							</li>
+							<li>
+								<img src="img/icons/eng.png" alt="">
+								<span>UA</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__down__links">
+					<a class="ico_tg" href="#"></a>
+					<a class="ico_vk" href="#"></a>
+					<a class="ico_fb" href="#"></a>
+					<a class="ico_yt" href="#"></a>
+				</div>
+				<div class="footer__down__text">
+					<p>Copyright mate-wallet,mining, arbitration, token, echange 2019 © All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/responsive-tables.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

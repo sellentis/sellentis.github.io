@@ -1,0 +1,57 @@
+@font-face {font-family: "GilroyBold";
+  src: url("fonts/Gilroy-Bold.ttf");
+  font-display: block;
+}
+
+@font-face {font-family: "GilroyMedium";
+  src: url("fonts/Gilroy-Medium.ttf");
+  font-display: block;
+}
+
+@font-face {font-family: "GilroyRegular";
+  src: url("fonts/Gilroy-Regular.ttf");
+  font-display: block;
+}
+@font-face {font-family: "GilroySemiBold";
+  src: url("fonts/Gilroy-SemiBold.ttf");
+  font-display: block;
+}
+.gb {
+	font-family: 'GilroyBold', sans-serif;
+}
+.gm {
+	font-family: 'GilroyMedium', sans-serif;
+}
+.gr {
+	font-family: 'GilroyRegular', sans-serif;
+}
+.gs {
+	font-family: 'GilroySemiBold', sans-serif;
+}
+.container {
+	position: relative;
+	max-width: 1145px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	&--lg {
+		position: relative;
+		max-width: 1334px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+
+	}
+	&--md {
+		position: relative;
+		max-width: 1240px;
+		margin: 0 auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.map {
+	.container--lg {
+		top: -80px;
+	}
+}

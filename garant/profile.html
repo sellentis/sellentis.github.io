@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Garant-Sdelka</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav class="d-f main-menu">
+				<div class="logo">
+					<a href="index.html" class="logo__item">Garant-Sdelka</a>
+				</div>
+				<ul class="menu d-f">
+					<li class="menu__item" style="list-style-type: none;"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+					<li class="menu__item" style="list-style-type: none;"><a href="about.html" class="menu__link">О нас</a></li>
+					<li class="menu__item" style="list-style-type: none;"><a href="arbitration.html" class="menu__link">Арбитраж</a></li>
+					<li class="menu__item" style="list-style-type: none;"><a href="contacts.html" class="menu__link">Контакты</a></li>
+				</ul>
+				<div class="contact d-f ai-c">
+					<div class="contact d-f ai-c">
+						<!-- если пользователь не авторизован -->
+						<!-- <a href="enter.html" class="btn">Войти</a>
+						<a href="register.html" class="btn">Регистрация</a> -->
+						<!-- если пользователь авторизован -->
+						<div class="login">
+							<a href="#" id="login-click">Admin <i></i></a>
+							<div class="login-box">
+								<ul>
+									<li style="list-style-type: none;"><a href="profile.html">Личный кабинет</a></li>
+									<li style="list-style-type: none;"><a href="#">Выход</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<nav class="d-f mob-menu">
+				<div class="mob-menu__header">
+					<div class="logo">
+						<a href="index.html" class="logo__item">Garant-Sdelka</a>
+					</div>
+					<div class="hamb-container">
+						<div class="hamb">
+							<span class="hamb-top"></span>
+							<span class="hamb-bot"></span>
+						</div>
+						<div class="hamb-text">menu</div>
+					</div>
+
+				</div>
+				<div class="mob-menu__footer">
+					<ul class="menu d-f">
+						<li class="menu__item" style="list-style-type: none;"><a href="reviews.html" class="menu__link">Отзывы</a></li>
+						<li class="menu__item" style="list-style-type: none;"><a href="about.html" class="menu__link">О нас</a></li>
+						<li class="menu__item" style="list-style-type: none;"><a href="arbitration.html" class="menu__link">Арбитраж</a></li>
+						<li class="menu__item" style="list-style-type: none;"><a href="contacts.html" class="menu__link last">Контакты</a></li>
+					</ul>
+					<div class="contact d-f ai-c">
+						<!-- <a href="enter.html" class="btn">Войти</a>
+						<a href="register.html" class="btn">Регистрация</a> -->
+
+	
+						<div class="login d-f jc-sb">
+							<a href="#" id="login-click">Admin <i></i></a>
+							<div class="login-box jc-sb">
+								<ul class="d-f">
+									<li style="list-style-type: none;"><a href="profile.html">Личный кабинет</a></li>
+									<li style="list-style-type: none;"><a href="#">Выход</a></li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="profile">
+			<div class="container">
+				<a href="#" class="btn pro">Мой профиль - Lorem Ipsum</a>
+				<a href="#" class="profile-info profile-info__first">Мой баланс - 5000 рублей</a>
+				<a href="#" class="profile-info">Мои сделки - 48</a>
+
+				<h2>Последние три сделки</h2>
+				<div class="profile-box">
+					<p>Example Man - Обмен данными - 5000 рублей</p>
+					<p>Example Man - Обмен данными - 5000 рублей</p>
+					<p>Example Man - Обмен данными - 5000 рублей</p>
+				</div>
+				<h2>Вывод средств</h2>
+				<div class="profile-output">
+					<form>
+						<label for="money">Платежная система</label><br>
+						
+						<select id="money" required>
+						  <option>Webmoney</option>
+						  <option>QIWI</option>
+						</select><br>
+
+						<label for="sum">Сумма вывода</label><br><input type="text" id="sum" required><br>
+					
+						<button class="btn">Вывести</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<h3>Обратная связь</h3>
+			<div class="social d-f jc-c">
+				<a href="mailto:help.garant.sdelka@gmail.com" class="social-item"><img src="img/gmail.png" alt=""></a>
+				<a href="https://www.instagram.com/garant_sdelkaa/" target="_blank" class="social-item"><img src="img/inst.png" alt=""></a>
+				<a href="" target="_blank" class="social-item"><img src="img/telegram.png" alt=""></a>
+				<a href="" target="_blank" class="social-item"><img src="img/vk.png" alt=""></a>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
