@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="game">
+		<div class="game__item click" data-val="1"><img src="img/angry.svg" alt=""></div>
+		<div class="game__item click" data-val="2"><img src="img/bored.svg" alt=""></div>
+		<div class="game__item click" data-val="3"><img src="img/confused.svg" alt=""></div>
+		<div class="game__item click" data-val="4"><img src="img/crying.svg" alt=""></div>
+
+		<div class="game__item click" data-val="5"><img src="img/emoticons.svg" alt=""></div>
+		<div class="game__item click" data-val="6"><img src="img/happy.svg" alt=""></div>
+		<div class="game__item click" data-val="7"><img src="img/in-love.svg" alt=""></div>
+		<div class="game__item click" data-val="8"><img src="img/mad.svg" alt=""></div>
+
+		<div class="game__item click" data-val="1"><img src="img/angry.svg" alt=""></div>
+		<div class="game__item click" data-val="2"><img src="img/bored.svg" alt=""></div>
+		<div class="game__item click" data-val="3"><img src="img/confused.svg" alt=""></div>
+		<div class="game__item click" data-val="4"><img src="img/crying.svg" alt=""></div>
+
+		<div class="game__item click" data-val="5"><img src="img/emoticons.svg" alt=""></div>
+		<div class="game__item click" data-val="6"><img src="img/happy.svg" alt=""></div>
+		<div class="game__item click" data-val="7"><img src="img/in-love.svg" alt=""></div>
+		<div class="game__item click" data-val="8"><img src="img/mad.svg" alt=""></div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script>
+		let item = $(".click");
+		let counter = 0;
+		let firstValue;
+		let secondValue;
+		let firstIndex;
+		let secondIndex;
+
+
+		function qwe(clicked) {
+			
+			if (counter == 1) {
+				console.log(counter)
+				clicked.toggleClass("active");
+				let secondValue = clicked.data("val");
+				secondIndex = clicked.index();
+				if (firstValue == secondValue && firstIndex != secondIndex) {
+					
+					setTimeout(function(){ 
+						item.eq(firstIndex).addClass("hidden");
+						item.eq(secondIndex).addClass("hidden");
+					},700);
+				}
+				else {
+					setTimeout(function(){ 
+						item.eq(firstIndex).removeClass("active");
+						item.eq(secondIndex).removeClass("active");
+					},500);
+					
+				}
+			}
+			if (counter == 0) {
+				console.log(counter)
+				clicked.toggleClass("active");
+				firstValue = clicked.data("val");
+				firstIndex = clicked.index();
+			}
+			counter++;
+			if (counter > 1) counter = 0;
+
+			
+		}
+		item.click(function() {
+			clicked = $(this);
+			qwe(clicked);
+			item.each(function (){
+			    this.style.pointerEvents = 'none'; 
+			}); 
+
+			setTimeout(function(){ 
+				item.each(function (){
+					if (!($(this).hasClass("hidden"))) {
+						this.style.pointerEvents = 'auto'; 
+					}
+					else {
+						this.style.pointerEvents = 'none';
+					}
+				}); 
+			},300);
+		});
+
+	</script>
+</body>
+</html>
