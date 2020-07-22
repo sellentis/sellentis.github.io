@@ -4,15 +4,26 @@ body {
 	align-items: center;
 	justify-content: center;  
 	background: linear-gradient(to right, #5c258d, #4389a2); 
-
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+* {
+	margin: 0;
+	padding: 0;
 }
 .game {
-	width: 350px;
-	height: 350px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+	.gameInfo {
+		text-align: center;
+	}
+	.gameView {
+		width: 350px;
+		height: 350px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
 	&__item {
 		height: 70px;
 		width: 70px;
@@ -27,14 +38,47 @@ body {
 		}
 		&.active {
   			transform: scaleX(-1);
-  			border-radius: 50%;
+  			// border-radius: 50%;
   			img {
   				display: inline;
   			}
+  			&[data-val="1"] {
+				background: url(../img/1.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="2"] {
+				background: url(../img/2.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="3"] {
+				background: url(../img/3.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="4"] {
+				background: url(../img/4.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="5"] {
+				background: url(../img/5.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="6"] {
+				background: url(../img/6.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="7"] {
+				background: url(../img/7.png) no-repeat center;
+				background-size: contain;
+			}
+			&[data-val="8"] {
+				background: url(../img/8.png) no-repeat center;
+				background-size: contain;
+			}
 		}
 		&.hidden {
 			opacity: 0;
 			pointer-events: none !important;
 		}
 	}
+	
 }
